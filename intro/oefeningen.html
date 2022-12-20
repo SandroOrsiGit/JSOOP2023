@@ -8,6 +8,7 @@
 	</head>
 	<body>
 		<script>
+			"use strict";
 			let voornaam = "Sandro";
 			let leeftijd = 27;
 			let partner = false;
@@ -21,7 +22,7 @@
 			array.push(leeftijd);
 			array.push(partner);
 
-			for (i = 0; i < 3; i++) {
+			for (i = 0; i < array.length; i++) {
 				console.log(typeof array[i]);
 			}
 		</script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			let totaal = 0;
+			console.log(typeof NaN);
+
+			let som = function () {
+				for (i = 0; i < arguments.length; i++) {
+					if (typeof arguments[i] == "number") {
+						totaal += arguments[i];
+					}
+				}
+
+				return totaal;
+			};
+			console.log(som(5, 8, 10, 14));
+		</script>
+	</body>
+</html>
